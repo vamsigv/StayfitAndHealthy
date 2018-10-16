@@ -1,27 +1,39 @@
-<%@include file="WEB-INF/views/header.jsp" %>
 <!DOCTYPE html>
-<html lang="en">
-<title>Welcome</title>
+<html lang=en>
+<head>
+    <title>Health & Fitness</title>
+    <%@include file="WEB-INF/views/header.jsp" %>
+    <style>.imgCategory{height:300px!important}</style>
+</head>
 <body>
-<div class="container">
-    <div class="jumbotron">
-        <h1>Welcome to the World of Health and Fitness</h1>
-
-        <p>Our main aim is to empower people to lead a healthy life style. The first step in achieving that would be
-            reading
-            about the fitness stories of other people.</p>
-        <button type="button" class="btn btn-success active" style="align-content: center"><a href=/viewjourneys
-                                                                                              style="color: white">Check
-            out the Stories</a></button>
-        </a>
+<div class=container>
+    <div class=jumbotron>
+        <h1>Stay Fit and Healthy</h1>
+        <p>Our main aim is to empower people to lead a healthy life style. We are providing an end to end solution to help out every individual to lead an Healthy and Happy Life.</p>
+    </div>
+    <div class=row>
+        <div class=col-md-6>
+            <div class=thumbnail>
+                <a href=/viewfattofitjourneys>
+                    <img src=/resources/static/Images/Fitness_Img.jpg class=imgCategory alt="Fitness Stories" style=width:100%>
+                    <div class=caption>
+                        <p>Checkout all the inspiring fitness stories</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class=col-md-6>
+            <div class=thumbnail>
+                <a href=/fitnessandhealthblog>
+                    <img src=/resources/static/Images/Nitrition_img.jpg class=imgCategory alt="Health & Nutrition" style=width:100%>
+                    <div class=caption>
+                        <p>Health and Nutrition related Information</p>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
-<!--
-<div class="container">
-    <p>This is some text.</p>
-
-    <p>This is another text.</p>
-</div>
 </body>
-</html>-->
 <%@include file="WEB-INF/views/footer.jsp" %>
+</html>
